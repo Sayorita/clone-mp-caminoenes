@@ -1,0 +1,202 @@
+/* Navbar */
+/* Navbar */
+
+nav {
+  background-color: black;
+  height: 205px;
+  box-shadow: 0 1px 2px #141112;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  font-weight: bold;
+  padding: 0;
+  z-index: 2; /* Aplique o z-index diretamente ao Navbar */
+}
+
+nav .brand-logo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  margin-left: 7%;
+  border-radius: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 5cm 7cm 0cm 13cm;
+  padding: 0;
+  overflow: hidden;
+}
+
+
+nav ul li {
+  margin-right: 10px;
+  position: relative;
+  height: 50px;
+  background-color: #555555;
+  border-top-right-radius: 10px;
+}
+
+nav ul li::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  border-top-right-radius: 10px;
+  background-color: #ff0000;
+  transition: all 0.4s ease;
+}
+
+nav ul li:hover::before {
+  width: 100%;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  letter-spacing: -1.2px;
+  display: flex;
+  align-items: center; /* Centraliza verticalmente o texto */
+  padding: 0 10px; /* Adicione padding para controlar o espaço dentro do elemento */
+  height: 100%; /* Garante que o texto preencha a altura total do elemento */
+  line-height: 1; /* Ajusta a altura da linha para centralizar o texto verticalmente */
+  font-size: 17px;
+  /* ou ajuste conforme necessário */
+}
+  
+  
+  ul {
+    list-style-type: none;
+    padding: 0%;  }
+    
+  ul li {
+    display: inline-block;
+    margin-bottom: 0;
+    z-index: 400;
+  }
+
+
+/* Mobile Menu */
+.sidenav-trigger {
+    color: #444;
+}
+
+.sidenav-trigger i {
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.sidenav {
+    background-color: #fff;
+    box-shadow: 0 1px 2px #141112
+}
+
+.sidenav li a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #444;
+}
+
+.sidenav li a:hover {
+    color: #000;
+}
+
+
+/* Main Content */
+.container {
+    margin-top: 30px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+h5 {
+  font-family: 'Roboto';
+  font-size: 14px;
+  color: black;
+  font-weight: bold;
+}
+
+.card {
+    margin-bottom: 30px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);  
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 10px;
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.card-text {
+    font-size: 16px;
+    font-weight: 400;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    height: 40px;
+    width: auto;
+    background-color: #FB3C03;
+    border-color: #FB3C03;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    padding: 8px 16px;
+    margin-top: 10px;
+    align-items: center; /* Centraliza verticalmente o texto */
+    line-height: 1.5; /* Ajusta a altura da linha para centralizar o texto verticalmente */
+
+    
+}
+
+.carousel-slider{
+  position:relative;
+  z-index: 1;
+}
+
+.btn-primary:hover {
+    background-color: #060100;
+    border-color: #FB3C03;
+    color: #FB3C03;    
+}
+
+
+/* Adicione uma classe aos elementos que terão o efeito de zoom */
+.zoomable-image {
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.zoomable-image img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.4s ease-in-out;
+}
+
+.zoomable-image:hover img {
+  transform: scale(1.6);
+}
+
+
