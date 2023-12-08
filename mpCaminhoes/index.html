@@ -37,12 +37,13 @@
                     <li><a href='#'>Opção 3</a></li>
                 </ul>
             </li>
-            <li><a class="item1" href="#">EMPRESA</a></li>
+            <li><a class="item1" href="/secao/empresa.html">EMPRESA</a></li>
             <li><a class="item1" href="#">FINANCIAMENTOS</a></li>
             <li><a class="item1" href="#">CONSULTAS</a></li>
             <li><a class="item1" href="#">CLIENTES</a></li>
-            <li><a class="item1" href="#">CONTATO</a></li>
+            <li><a class="item1" href="/secao/contato.html">CONTATO</a></li>
         </ul>
+        <img src="image/amigos.jpg" class="ajust">
     </nav>
 
     <div class="carousel carousel-slider center">
@@ -186,8 +187,8 @@
             var elems = document.querySelectorAll('.carousel');
             var options = {
                 fullWidth: true,
-                duration: 90, // Defina a duração de cada slide em milissegundos (neste exemplo, 2 segundos)
-                interval: 70 // Defina o intervalo entre a mudança de slides em milissegundos (neste exemplo, 4 segundos)
+                duration: 90, 
+                interval: 70 
             };
             var instance = M.Carousel.init(elems, options);
         });
