@@ -1,8 +1,6 @@
-/* Navbar */
-/* Navbar */
 
 nav {
-  background-color: black;
+  background-color: #141112;
   height: 205px;
   box-shadow: 0 1px 2px #141112;
   display: flex;
@@ -10,7 +8,39 @@ nav {
   align-items: center; 
   font-weight: bold;
   padding: 0;
-  z-index: 2; /* Aplique o z-index diretamente ao Navbar */
+  z-index: 2; 
+}
+
+.text-container {
+  float: left; 
+  width: 50%;   /*alinhar o texto dentro do container*/
+  text-align: justify;
+}
+
+.image-container {
+  float: right; /* alinhar a imagem à direita */
+  width: 50%;   
+  padding: 2.5cm;
+}
+
+p {
+  font-family: "Roboto";
+}
+
+.mod{
+  padding: 0;
+  margin: auto;
+  height: 450px;
+  width: 800px;
+  display: flex;
+}
+
+.ajust{
+  width: 3cm;
+  height: 1.4cm;
+  margin-right: 18ch;
+  margin-top: 0.3cap;
+
 }
 
 nav .brand-logo {
@@ -24,7 +54,7 @@ nav .brand-logo {
 
 nav ul {
   list-style-type: none;
-  margin: 5cm 7cm 0cm 13cm;
+  margin: 5cm 0cm 0cm 13cm;
   padding: 0;
   overflow: hidden;
 }
@@ -60,12 +90,11 @@ nav ul li a {
   position: relative;
   letter-spacing: -1.2px;
   display: flex;
-  align-items: center; /* Centraliza verticalmente o texto */
-  padding: 0 10px; /* Adicione padding para controlar o espaço dentro do elemento */
-  height: 100%; /* Garante que o texto preencha a altura total do elemento */
-  line-height: 1; /* Ajusta a altura da linha para centralizar o texto verticalmente */
+  align-items: center; 
+  padding: 0 10px; 
+  height: 100%; 
+  line-height: 1; 
   font-size: 17px;
-  /* ou ajuste conforme necessário */
 }
   
   
@@ -79,46 +108,19 @@ nav ul li a {
     z-index: 400;
   }
 
-
-/* Mobile Menu */
-.sidenav-trigger {
-    color: #444;
-}
-
-.sidenav-trigger i {
-    font-size: 30px;
-    line-height: 60px;
-}
-
-.sidenav {
-    background-color: #fff;
-    box-shadow: 0 1px 2px #141112
-}
-
-.sidenav li a {
-    font-size: 16px;
-    font-weight: 400;
-    color: #444;
-}
-
-.sidenav li a:hover {
-    color: #000;
-}
-
-
-/* Main Content */
 .container {
     margin-top: 30px;
 }
 
-h1 {
+h2 {
     font-size: 36px;
     font-weight: 500;
     color: #444;
     margin-bottom: 20px;
+    font-family: "Bebas Neue";
 }
 
-h2 {
+h1 {
     font-size: 24px;
     font-weight: 500;
     color: #444;
@@ -164,8 +166,8 @@ h5 {
     color: #fff;
     padding: 8px 16px;
     margin-top: 10px;
-    align-items: center; /* Centraliza verticalmente o texto */
-    line-height: 1.5; /* Ajusta a altura da linha para centralizar o texto verticalmente */
+    align-items: center; 
+    line-height: 1.5; 
 
     
 }
@@ -182,7 +184,6 @@ h5 {
 }
 
 
-/* Adicione uma classe aos elementos que terão o efeito de zoom */
 .zoomable-image {
   position: relative;
   overflow: hidden;
@@ -198,5 +199,54 @@ h5 {
 .zoomable-image:hover img {
   transform: scale(1.6);
 }
+
+.borda{
+  border: 1px dashed #DCDCDC;
+  padding: 2%;
+}
+
+@media (max-width: 738px){
+  .carousel {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 480px){
+  .carousel{
+    max-height: 200px;
+  }
+}
+
+.input-field label {
+  margin-top: -25px; 
+}
+
+/* sobrescrever o padrão do materialize */
+.input-field input[type=text]:focus + label, .input-field input[type=email]:focus + label, .input-field input[type=tel]:focus + label {
+  color: #000;
+}
+
+.input-field input[type=text]:focus, .input-field input[type=email]:focus, .input-field input[type=tel]:focus {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+
+.input-field input[type="text"], .input-field input[type="email"], .input-field input[type="tel"], textarea[id="mensagem"] {
+  border-radius:15px;
+  border: 1px solid #000
+}
+
+button[type=submit] {
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #4e2587;
+}
+
+
+a.link {
+  color: #4e2587;
+}
+
+
 
 
